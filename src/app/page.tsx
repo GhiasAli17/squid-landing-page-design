@@ -37,7 +37,7 @@ export default function Home() {
         {/* header part  */}
         <header className="pt-7 ps-4 pe-4">
           <div className="max-w-[1110px] mx-auto ">
-            <div className="flex w-full justify-between items-center">
+            <div className="flex md:flex-row flex-col gap-4 md:gap-0 w-full justify-between items-center">
               {squidIcon}
               <div className="flex items-center justify-between gap-[34px]">
                 <p className="text-light-gray text-sm hover:underline cursor-pointer">
@@ -50,11 +50,11 @@ export default function Home() {
         </header>
         <div className="max-w-[1140px] mx-auto ps-4 pe-4">
           <div className="grid place-items-center w-full">
-            <Sphere className="size-16" />
+            <Sphere className="size-16 hidden md:block" />
           </div>
-          <div className="flex  mt-9 pb-4">
+          <div className="flex flex-col md:flex-row  mt-9 pb-4">
             <div className="lg:mr-[94px] flex items-end">
-              <Sphere className="size-[130px]" />
+              <Sphere className="size-[130px] hidden md:block" />
             </div>
             <div className="pb-2">
               <h1 className="text-center text-[64px] leading-[80px] text-white max-w-[749px] mx-auto ">
@@ -71,7 +71,7 @@ export default function Home() {
             </div>
             <div className="lg:ml-32 flex items-center">
               {" "}
-              <Sphere className="size-24" />
+              <Sphere className="size-24 hidden md:block" />
             </div>
           </div>
         </div>
@@ -156,11 +156,11 @@ export default function Home() {
         </div>
         <div className="max-w-[1200px] mx-auto mt-8 flex xl:flex-row flex-col justify-center items-center gap-3">
           <div>
-            <div className="size-[678px] border rounded-full border-medium-gray grid place-items-center">
-              <div className="size-[510px] border rounded-full border-medium-gray grid place-items-center">
-                <div className="size-[380px] border rounded-full border-medium-gray grid place-items-center">
-                  <div className="size-[260px] border rounded-full border-medium-gray grid place-items-center">
-                    <div className="size-[129px] border rounded-full border-medium-gray bg-medium-gray grid place-items-center">
+            <div className="size-[320px] md:size-[678px] border rounded-full border-medium-gray grid place-items-center">
+              <div className="size-[250px] md:size-[510px] border rounded-full border-medium-gray grid place-items-center">
+                <div className="size-[180px] md:size-[380px] border rounded-full border-medium-gray grid place-items-center">
+                  <div className="size-[110px] md:size-[260px] border rounded-full border-medium-gray grid place-items-center">
+                    <div className="size-[100px] md:size-[129px] border rounded-full border-medium-gray bg-medium-gray grid place-items-center">
                       {flowerIcon}
                     </div>
                   </div>
@@ -216,23 +216,25 @@ export default function Home() {
 
       {/* 5th section  */}
       <div className=" bg-black pt-28 ps-4 pe-4 relative">
-        <div className="max-w-[1120px]  rounded-[40px] absolute lg:-top-[15%] md:-top-[5%]   left-4 right-4 py-9 pl-12 bg-gradient-to-r from-gradient-start to-gradient-end  mx-auto">
-          <div className="flex items-center">
-            <div className="text-white text-xl pl-5">
+        <div className="max-w-[1120px]  rounded-[40px] absolute lg:-top-[15%] md:-top-[5%]   left-4 right-4 py-9 md:pl-12 bg-gradient-to-r from-gradient-start to-gradient-end  mx-auto">
+          <div className="flex md:flex-row flex-col items-center">
+            <div className="text-white text-xl px-4 md:px-0">
               <p>Love our Our Tool?</p>
               <h1 className="text-5xl mt-3 mb-9">
                 Fell Free to Join our 15 Days Free Trial
               </h1>
               <Button noGradient={true} className="bg-black" text="Download" />
             </div>
-            <div>{fingersIcon}</div>
+            <div className="w-full hidden md:block">{fingersIcon}</div>
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col justify-center items-center gap-8 md:mt-[500px] lg:mt-[200px] p-4 ps-4 pe-4">
+        <div className="flex lg:flex-row flex-col justify-center items-center gap-8 mt-[240px] md:mt-[500px] lg:mt-[200px] p-4 ps-4 pe-4">
           <div className="flex-1 w-full flex justify-center">{globeIcon}</div>
           <div className="flex-1">
-            <h1 className="text-white text-5xl font-semibold">Get In Touch</h1>
+            <h1 className="text-white text-5xl -mt-[150px] md:mt-0 font-semibold">
+              Get In Touch
+            </h1>
             <p className="max-w-[503px] mb-7">
               A good design is not only aesthetically pleasing, but also
               functional. It should be able to solve the problem{" "}
@@ -262,7 +264,7 @@ export default function Home() {
       </div>
       {/* footer  */}
       <div className=" bg-medium-black  py-11 ps-4 pe-4 ">
-        <div className="max-w-[1110px] w-full mx-auto flex items-center justify-between">
+        <div className="max-w-[1110px] w-full mx-auto flex md:flex-row flex-col-reverse gap-4 md:gap-0 items-center justify-between">
           <p>All Rights Reservd @ 2024</p>
           <div className="flex gap-4">
             <div className="p-2 bg-light-black cursor-pointer rounded-full grid place-items-center">
