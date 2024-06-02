@@ -116,8 +116,8 @@ export default function Home() {
             </div>
           </div>
           {/* col 3 */}
-          <div className="flex flex-1 flex-col gap-5">
-            <div className="bg-light-black rounded-2xl p-4 ">
+          <div className="flex flex-1 flex-col  gap-5">
+            <div className="bg-light-black rounded-2xl p-4 flex justify-center items-center flex-col">
               {midCardIcon}
               <Image
                 src="/images/b-card-1.png"
