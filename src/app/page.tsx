@@ -53,7 +53,7 @@ export default function Home() {
             <Sphere className="size-16" />
           </div>
           <div className="flex  mt-9 pb-4">
-            <div className="mr-[94px] flex items-end">
+            <div className="lg:mr-[94px] flex items-end">
               <Sphere className="size-[130px]" />
             </div>
             <div className="pb-2">
@@ -69,7 +69,7 @@ export default function Home() {
                 <Button text="Download Template" />
               </div>
             </div>
-            <div className="ml-32 flex items-center">
+            <div className="lg:ml-32 flex items-center">
               {" "}
               <Sphere className="size-24" />
             </div>
@@ -78,7 +78,7 @@ export default function Home() {
       </div>
       {/* 2nd section  */}
       <div className="min-h-[475px] ps-4 pe-4 flex justify-center bg-gradient-to-r from-gradient-start to-gradient-end relative">
-        <div className="flex gap-4 w-full max-w-[870px] mx-auto p-6 bg-medium-black rounded-2xl -top-[50%] absolute">
+        <div className="flex md:flex-row flex-col gap-4 w-full max-w-[870px] mx-auto p-6 bg-medium-black rounded-2xl -top-[50%] absolute">
           <div className="bg-light-black flex flex-col justify-center items-center rounded-2xl p-4 flex-1">
             <div>{lightSquidIcon}</div>
             <div className="bg-medium-gray h-[2px] w-full mt-5 mb-8" />
@@ -154,7 +154,7 @@ export default function Home() {
             <FeatureCard icon={featSixIcon} />
           </div>
         </div>
-        <div className="max-w-[1200px] mx-auto mt-8 flex gap-3">
+        <div className="max-w-[1200px] mx-auto mt-8 flex xl:flex-row flex-col justify-center items-center gap-3">
           <div>
             <div className="size-[678px] border rounded-full border-medium-gray grid place-items-center">
               <div className="size-[510px] border rounded-full border-medium-gray grid place-items-center">
@@ -191,7 +191,7 @@ export default function Home() {
             Companies we Worked With in SInce 2015
           </h1>
 
-          <div className="mt-16 flex gap-7 mx-auto">
+          <div className="mt-16 flex gap-7 mx-auto w-full flex-wrap">
             <div className="flex-1 rounded-[10px] border-black bg-black p-4 grid place-items-center">
               {companyOneIcon}
             </div>
@@ -215,8 +215,8 @@ export default function Home() {
       </div>
 
       {/* 5th section  */}
-      <div className=" bg-black pt-28  ps-4 pe-4 relative">
-        <div className="max-w-[1120px] rounded-[40px] absolute -top-[15%]   left-0 right-0 py-9 pl-12 bg-gradient-to-r from-gradient-start to-gradient-end  mx-auto">
+      <div className=" bg-black pt-28 ps-4 pe-4 relative">
+        <div className="max-w-[1120px]  rounded-[40px] absolute lg:-top-[15%] md:-top-[5%]   left-4 right-4 py-9 pl-12 bg-gradient-to-r from-gradient-start to-gradient-end  mx-auto">
           <div className="flex items-center">
             <div className="text-white text-xl pl-5">
               <p>Love our Our Tool?</p>
@@ -229,8 +229,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex gap-8 mt-[200px] p-4 ps-4 pe-4">
-          <div className="flex-1 w-full">{globeIcon}</div>
+        <div className="flex lg:flex-row flex-col justify-center items-center gap-8 md:mt-[500px] lg:mt-[200px] p-4 ps-4 pe-4">
+          <div className="flex-1 w-full flex justify-center">{globeIcon}</div>
           <div className="flex-1">
             <h1 className="text-white text-5xl font-semibold">Get In Touch</h1>
             <p className="max-w-[503px] mb-7">
