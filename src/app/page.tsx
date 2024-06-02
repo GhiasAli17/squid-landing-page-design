@@ -135,9 +135,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      {/* dummy section for round  */}
+      <div
+        className=" bg-black  h-[800px] w-full p-4 hidden md:block"
+        style={{ clipPath: "ellipse(100% 100% at 50% 100%)" }}
+      ></div>
       {/* 3rd section  */}
-      <div className=" bg-black pt-24 pb-24 ps-4 pe-4 ">
+      <div className=" bg-black pt-24 pb-24 ps-4 pe-4 md:-mt-[680px]  relative z-40">
         {" "}
         <div className=" max-w-[1110px] mx-auto  -top-[50px]">
           <h1 className="text-white font-semibold text-5xl">Feature Boxes</h1>
