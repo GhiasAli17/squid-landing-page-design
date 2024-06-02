@@ -32,8 +32,11 @@ import FeatureCard from "./components/FeatureCard";
 
 export default function Home() {
   return (
-    <main className="min-h-screen text-light-gray">
-      <div className="bg-black pb-[270px] bg-vertical-lines">
+    <main className="min-h-screen text-light-gray bg-gradient-to-r from-gradient-start to-gradient-end relative">
+      <div
+        className="bg-black pb-[270px] bg-vertical-lines relative"
+        style={{ clipPath: "ellipse(100% 100% at 50% 0%)" }}
+      >
         {/* header part  */}
         <header className="pt-7 ps-4 pe-4">
           <div className="max-w-[1110px] mx-auto ">
@@ -77,8 +80,8 @@ export default function Home() {
         </div>
       </div>
       {/* 2nd section  */}
-      <div className="min-h-[475px] ps-4 pe-4 flex justify-center bg-gradient-to-r from-gradient-start to-gradient-end relative">
-        <div className="flex md:flex-row flex-col gap-4 w-full max-w-[870px] mx-auto p-6 bg-medium-black rounded-2xl -top-[50%] absolute">
+      <div className="min-h-[475px] ps-4 pe-4   flex justify-center bg-gradient-to-r from-gradient-start to-gradient-end relative">
+        <div className="flex md:flex-row flex-col gap-4 w-full z-20  max-w-[870px] mx-auto p-6 bg-medium-black rounded-2xl -top-[50%] absolute">
           <div className="bg-light-black flex flex-col justify-center items-center rounded-2xl p-4 flex-1">
             <div>{lightSquidIcon}</div>
             <div className="bg-medium-gray h-[2px] w-full mt-5 mb-8" />
@@ -134,7 +137,7 @@ export default function Home() {
       </div>
 
       {/* 3rd section  */}
-      <div className=" bg-black pt-24 pb-24 ps-4 pe-4">
+      <div className=" bg-black pt-24 pb-24 ps-4 pe-4 ">
         {" "}
         <div className=" max-w-[1110px] mx-auto  -top-[50px]">
           <h1 className="text-white font-semibold text-5xl">Feature Boxes</h1>
