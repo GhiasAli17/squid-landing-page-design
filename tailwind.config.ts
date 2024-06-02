@@ -14,7 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 
         "vertical-lines":
-          "repeating-linear-gradient(90deg, #000, #000 calc(100% / 13 - 2px), #0d0d0d calc(100% / 13 - 2px), #0d0d0d calc(100% / 13))",
+          "repeating-linear-gradient(90deg, #000, #000 calc(100% / 13 - 2px), rgba(13,13,13,0.5) calc(100% / 13 - 2px), rgba(13,13,13,0.5) calc(100% / 13))",
       },
       colors: {
         white: "#fff",
