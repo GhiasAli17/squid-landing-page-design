@@ -2,17 +2,29 @@ import Button from "@/components/common/Button";
 import Sphere from "@/components/common/Sphere";
 import {
   bLineIcon,
+  companyIconFive,
+  companyIconFour,
+  companyIconSix,
+  companyIconThree,
+  companyIconTwo,
+  companyOneIcon,
+  discordIcon,
   featFiveIcon,
   featFourIcon,
   featOneIcon,
   featSixIcon,
   featThreeIcon,
   featTwoIcon,
+  fingersIcon,
+  flowerIcon,
+  globeIcon,
   hLineIcon,
   lightSquidIcon,
+  linkedInIcon,
   midCardIcon,
   squidIcon,
   statsIcon,
+  twitterIcon,
   usersIcon,
 } from "@/utils/icons/icons";
 import Image from "next/image";
@@ -122,7 +134,7 @@ export default function Home() {
       </div>
 
       {/* 3rd section  */}
-      <div className=" bg-black pt-24 pb-11 ps-4 pe-4">
+      <div className=" bg-black pt-24 pb-24 ps-4 pe-4">
         {" "}
         <div className=" max-w-[1110px] mx-auto  -top-[50px]">
           <h1 className="text-white font-semibold text-5xl">Feature Boxes</h1>
@@ -140,6 +152,128 @@ export default function Home() {
             <FeatureCard icon={featFourIcon} />
             <FeatureCard icon={featFiveIcon} />
             <FeatureCard icon={featSixIcon} />
+          </div>
+        </div>
+        <div className="max-w-[1200px] mx-auto mt-8 flex gap-3">
+          <div>
+            <div className="size-[678px] border rounded-full border-medium-gray grid place-items-center">
+              <div className="size-[510px] border rounded-full border-medium-gray grid place-items-center">
+                <div className="size-[380px] border rounded-full border-medium-gray grid place-items-center">
+                  <div className="size-[260px] border rounded-full border-medium-gray grid place-items-center">
+                    <div className="size-[129px] border rounded-full border-medium-gray bg-medium-gray grid place-items-center">
+                      {flowerIcon}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex px-2 flex-col justify-center">
+            <h1 className="text-5xl text-white text-center">
+              We&apos;re here to guide and help you at all times
+            </h1>
+            <p className="text-lg mt-5 mb-7">
+              A good design is not only aesthetically pleasing, but also
+              functional. It should be able to solve the problem{" "}
+            </p>
+            <Button
+              text="Download"
+              className="w-auto flex-grow-0 lg:max-w-[127px]"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* 4th section  */}
+      <div className=" bg-medium-black pt-28 pb-11 ps-4 pe-4 ">
+        <div className="max-w-[1110px] mx-auto mb-28">
+          <h1 className="text-white text-5xl leading-[64px] font-semibold max-w-[567px] mx-auto text-center">
+            Companies we Worked With in SInce 2015
+          </h1>
+
+          <div className="mt-16 flex gap-7 mx-auto">
+            <div className="flex-1 rounded-[10px] border-black bg-black p-4 grid place-items-center">
+              {companyOneIcon}
+            </div>
+            <div className="flex-1 rounded-[10px] border-black bg-black p-4 grid place-items-center">
+              {companyIconTwo}
+            </div>
+            <div className="flex-1 rounded-[10px] border-black bg-black p-4 grid place-items-center">
+              {companyIconThree}
+            </div>
+            <div className="flex-1 rounded-[10px] border-black bg-black p-4 grid place-items-center">
+              {companyIconFour}
+            </div>
+            <div className="flex-1 rounded-[10px] border-black bg-black p-4 grid place-items-center">
+              {companyIconFive}
+            </div>
+            <div className="flex-1 rounded-[10px] border-black bg-black p-4 grid place-items-center">
+              {companyIconSix}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 5th section  */}
+      <div className=" bg-black pt-28  ps-4 pe-4 relative">
+        <div className="max-w-[1120px] rounded-[40px] absolute -top-[15%]   left-0 right-0 py-9 pl-12 bg-gradient-to-r from-gradient-start to-gradient-end  mx-auto">
+          <div className="flex items-center">
+            <div className="text-white text-xl pl-5">
+              <p>Love our Our Tool?</p>
+              <h1 className="text-5xl mt-3 mb-9">
+                Fell Free to Join our 15 Days Free Trial
+              </h1>
+              <Button noGradient={true} className="bg-black" text="Download" />
+            </div>
+            <div>{fingersIcon}</div>
+          </div>
+        </div>
+
+        <div className="flex gap-8 mt-[200px] p-4 ps-4 pe-4">
+          <div className="flex-1 w-full">{globeIcon}</div>
+          <div className="flex-1">
+            <h1 className="text-white text-5xl font-semibold">Get In Touch</h1>
+            <p className="max-w-[503px] mb-7">
+              A good design is not only aesthetically pleasing, but also
+              functional. It should be able to solve the problem{" "}
+            </p>
+            <div className="flex flex-col gap-[18px] lg:max-w-[408px]">
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="py-3 px-7 bg-medium-black rounded"
+              />
+              <input
+                type="text"
+                placeholder="Name"
+                className="py-3 px-7 bg-medium-black rounded"
+              />
+
+              <textarea
+                rows={5}
+                placeholder="Name"
+                className="py-3 resize-none px-7 bg-medium-black rounded"
+              />
+
+              <Button text="Get in touch" className="lg:w-fit" />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* footer  */}
+      <div className=" bg-medium-black  py-11 ps-4 pe-4 ">
+        <div className="max-w-[1110px] w-full mx-auto flex items-center justify-between">
+          <p>All Rights Reservd @ 2024</p>
+          <div className="flex gap-4">
+            <div className="p-2 bg-light-black cursor-pointer rounded-full grid place-items-center">
+              {twitterIcon}
+            </div>
+            <div className="p-2 bg-light-black cursor-pointer rounded-full grid place-items-center">
+              {linkedInIcon}
+            </div>
+            <div className="p-2 bg-light-black cursor-pointer rounded-full grid place-items-center">
+              {discordIcon}
+            </div>
           </div>
         </div>
       </div>
